@@ -119,5 +119,23 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\725a3372f332be3cb3935be5a4ab0744.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reloj-despertador-digital-con-termometro-y-luz-de-noche.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mambo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Engranaje.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tuerca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
