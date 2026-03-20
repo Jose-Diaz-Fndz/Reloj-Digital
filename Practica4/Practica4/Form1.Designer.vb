@@ -32,13 +32,15 @@ Partial Class Form1
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Calstone = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.ElCondorPasa = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Matikanetannhauser1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Matikanetannhauser = New System.Windows.Forms.PictureBox()
+        Me.Seconds = New System.Windows.Forms.Label()
         Me.Calstone.SuspendLayout()
+        CType(Me.Matikanetannhauser1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Matikanetannhauser, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -124,13 +126,34 @@ Partial Class Form1
         '
         'Calstone
         '
+        Me.Calstone.BackColor = System.Drawing.Color.DarkRed
+        Me.Calstone.Controls.Add(Me.ElCondorPasa)
         Me.Calstone.Controls.Add(Me.Button1)
         Me.Calstone.Controls.Add(Me.Label3)
-        Me.Calstone.Location = New System.Drawing.Point(96, 68)
+        Me.Calstone.Location = New System.Drawing.Point(106, 68)
         Me.Calstone.Name = "Calstone"
         Me.Calstone.Size = New System.Drawing.Size(554, 267)
         Me.Calstone.TabIndex = 8
         Me.Calstone.Visible = False
+        '
+        'ElCondorPasa
+        '
+        Me.ElCondorPasa.BackColor = System.Drawing.SystemColors.Menu
+        Me.ElCondorPasa.FormattingEnabled = True
+        Me.ElCondorPasa.Items.AddRange(New Object() {"Blanco", "Rojo", "Azul", "Naranja", "Verde"})
+        Me.ElCondorPasa.Location = New System.Drawing.Point(21, 116)
+        Me.ElCondorPasa.Name = "ElCondorPasa"
+        Me.ElCondorPasa.Size = New System.Drawing.Size(121, 21)
+        Me.ElCondorPasa.TabIndex = 2
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(21, 86)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "24h"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -143,14 +166,15 @@ Partial Class Form1
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Configuraciones ~w~"
         '
-        'Button1
+        'Matikanetannhauser1
         '
-        Me.Button1.Location = New System.Drawing.Point(21, 86)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Matikanetannhauser1.Image = Global.Practica4.My.Resources.Resources.Not_mambo
+        Me.Matikanetannhauser1.Location = New System.Drawing.Point(788, 12)
+        Me.Matikanetannhauser1.Name = "Matikanetannhauser1"
+        Me.Matikanetannhauser1.Size = New System.Drawing.Size(163, 124)
+        Me.Matikanetannhauser1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Matikanetannhauser1.TabIndex = 9
+        Me.Matikanetannhauser1.TabStop = False
         '
         'PictureBox1
         '
@@ -162,17 +186,16 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
-        'Matikanetannhauser
+        'Seconds
         '
-        Me.Matikanetannhauser.BackColor = System.Drawing.Color.Black
-        Me.Matikanetannhauser.ErrorImage = Nothing
-        Me.Matikanetannhauser.Image = Global.Practica4.My.Resources.Resources.tuerca
-        Me.Matikanetannhauser.Location = New System.Drawing.Point(806, 12)
-        Me.Matikanetannhauser.Name = "Matikanetannhauser"
-        Me.Matikanetannhauser.Size = New System.Drawing.Size(145, 122)
-        Me.Matikanetannhauser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Matikanetannhauser.TabIndex = 7
-        Me.Matikanetannhauser.TabStop = False
+        Me.Seconds.AutoSize = True
+        Me.Seconds.BackColor = System.Drawing.Color.DarkRed
+        Me.Seconds.Font = New System.Drawing.Font("Viner Hand ITC", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Seconds.Location = New System.Drawing.Point(425, 154)
+        Me.Seconds.Name = "Seconds"
+        Me.Seconds.Size = New System.Drawing.Size(76, 31)
+        Me.Seconds.TabIndex = 10
+        Me.Seconds.Text = "Label4"
         '
         'Form1
         '
@@ -180,8 +203,8 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Maroon
         Me.ClientSize = New System.Drawing.Size(963, 654)
+        Me.Controls.Add(Me.Matikanetannhauser1)
         Me.Controls.Add(Me.Calstone)
-        Me.Controls.Add(Me.Matikanetannhauser)
         Me.Controls.Add(Me.Fecha)
         Me.Controls.Add(Me.Days)
         Me.Controls.Add(Me.Minutes)
@@ -189,14 +212,15 @@ Partial Class Form1
         Me.Controls.Add(Me.Hours)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Seconds)
         Me.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Name = "Form1"
         Me.Text = "Agemasen (Reloj Digital)"
         Me.TransparencyKey = System.Drawing.Color.Transparent
         Me.Calstone.ResumeLayout(False)
         Me.Calstone.PerformLayout()
+        CType(Me.Matikanetannhauser1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Matikanetannhauser, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -214,5 +238,7 @@ Partial Class Form1
     Friend WithEvents Calstone As Panel
     Friend WithEvents Button1 As Button
     Friend WithEvents Label3 As Label
-    Friend WithEvents Matikanetannhauser As PictureBox
+    Friend WithEvents Matikanetannhauser1 As PictureBox
+    Friend WithEvents ElCondorPasa As ComboBox
+    Friend WithEvents Seconds As Label
 End Class

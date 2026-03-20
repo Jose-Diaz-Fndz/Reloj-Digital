@@ -42,6 +42,11 @@ Practica4
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Practica4.My.Resources.Resources.Not_mambo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Practica4.My.Resources.Resources.reloj_despertador_digital_con_termometro_y_luz_de_noche">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

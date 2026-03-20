@@ -103,6 +103,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Not_mambo() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Not mambo", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property reloj_despertador_digital_con_termometro_y_luz_de_noche() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("reloj-despertador-digital-con-termometro-y-luz-de-noche", resourceCulture)
