@@ -38,9 +38,16 @@ Partial Class Form1
         Me.Matikanetannhauser1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Seconds = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Manhattancafe = New System.Windows.Forms.Label()
+        Me.HarikitteIkou = New System.Windows.Forms.Button()
+        Me.AgnesDigital = New System.Windows.Forms.Button()
+        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.Calstone.SuspendLayout()
         CType(Me.Matikanetannhauser1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -127,6 +134,7 @@ Partial Class Form1
         'Calstone
         '
         Me.Calstone.BackColor = System.Drawing.Color.DarkRed
+        Me.Calstone.Controls.Add(Me.Panel2)
         Me.Calstone.Controls.Add(Me.ElCondorPasa)
         Me.Calstone.Controls.Add(Me.Button1)
         Me.Calstone.Controls.Add(Me.Label3)
@@ -197,6 +205,60 @@ Partial Class Form1
         Me.Seconds.TabIndex = 10
         Me.Seconds.Text = "Label4"
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Firebrick
+        Me.Panel2.Controls.Add(Me.AgnesDigital)
+        Me.Panel2.Controls.Add(Me.HarikitteIkou)
+        Me.Panel2.Controls.Add(Me.Manhattancafe)
+        Me.Panel2.Controls.Add(Me.Label4)
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(554, 264)
+        Me.Panel2.TabIndex = 3
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Sitka Banner", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.LightSeaGreen
+        Me.Label4.Location = New System.Drawing.Point(164, 9)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(196, 53)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Cronómetro"
+        '
+        'Manhattancafe
+        '
+        Me.Manhattancafe.AutoSize = True
+        Me.Manhattancafe.Font = New System.Drawing.Font("Papyrus", 36.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Manhattancafe.Location = New System.Drawing.Point(299, 66)
+        Me.Manhattancafe.Name = "Manhattancafe"
+        Me.Manhattancafe.Size = New System.Drawing.Size(61, 76)
+        Me.Manhattancafe.TabIndex = 1
+        Me.Manhattancafe.Text = "0"
+        '
+        'HarikitteIkou
+        '
+        Me.HarikitteIkou.Location = New System.Drawing.Point(88, 176)
+        Me.HarikitteIkou.Name = "HarikitteIkou"
+        Me.HarikitteIkou.Size = New System.Drawing.Size(75, 23)
+        Me.HarikitteIkou.TabIndex = 2
+        Me.HarikitteIkou.Text = "Inicio"
+        Me.HarikitteIkou.UseVisualStyleBackColor = True
+        '
+        'AgnesDigital
+        '
+        Me.AgnesDigital.Location = New System.Drawing.Point(312, 176)
+        Me.AgnesDigital.Name = "AgnesDigital"
+        Me.AgnesDigital.Size = New System.Drawing.Size(75, 23)
+        Me.AgnesDigital.TabIndex = 3
+        Me.AgnesDigital.Text = "Reset"
+        Me.AgnesDigital.UseVisualStyleBackColor = True
+        '
+        'Timer3
+        '
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -221,6 +283,8 @@ Partial Class Form1
         Me.Calstone.PerformLayout()
         CType(Me.Matikanetannhauser1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -241,4 +305,10 @@ Partial Class Form1
     Friend WithEvents Matikanetannhauser1 As PictureBox
     Friend WithEvents ElCondorPasa As ComboBox
     Friend WithEvents Seconds As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label4 As Label
+    Friend WithEvents AgnesDigital As Button
+    Friend WithEvents HarikitteIkou As Button
+    Friend WithEvents Manhattancafe As Label
+    Friend WithEvents Timer3 As Timer
 End Class

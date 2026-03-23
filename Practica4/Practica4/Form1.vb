@@ -1,5 +1,7 @@
 ﻿Public Class Form1
     Dim formato As Boolean = True
+    Dim start_Uma As Boolean = False
+    Dim tiempo_crono As Integer = 0
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Start()
         Timer2.Start()
@@ -52,6 +54,7 @@
             Days.ForeColor = Color.White
             Fecha.ForeColor = Color.White
             Seconds.ForeColor = Color.White
+            Label2.ForeColor = Color.White
         ElseIf color_texto = "Rojo" Then
             Hours.ForeColor = Color.IndianRed
             Minutes.ForeColor = Color.IndianRed
@@ -59,6 +62,7 @@
             Days.ForeColor = Color.IndianRed
             Fecha.ForeColor = Color.IndianRed
             Seconds.ForeColor = Color.IndianRed
+            Label2.ForeColor = Color.IndianRed
         ElseIf color_texto = "Azul" Then
             Hours.ForeColor = Color.MediumAquamarine
             Minutes.ForeColor = Color.MediumAquamarine
@@ -66,6 +70,7 @@
             Days.ForeColor = Color.MediumAquamarine
             Fecha.ForeColor = Color.MediumAquamarine
             Seconds.ForeColor = Color.MediumAquamarine
+            Label2.ForeColor = Color.MediumAquamarine
         ElseIf color_texto = "Naranja" Then
             Hours.ForeColor = Color.LightSalmon
             Minutes.ForeColor = Color.LightSalmon
@@ -73,6 +78,7 @@
             Days.ForeColor = Color.LightSalmon
             Fecha.ForeColor = Color.LightSalmon
             Seconds.ForeColor = Color.LightSalmon
+            Label2.ForeColor = Color.LightSalmon
         ElseIf color_texto = "Verde" Then
             Hours.ForeColor = Color.MediumSpringGreen
             Minutes.ForeColor = Color.MediumSpringGreen
@@ -80,6 +86,7 @@
             Days.ForeColor = Color.MediumSpringGreen
             Fecha.ForeColor = Color.MediumSpringGreen
             Seconds.ForeColor = Color.MediumSpringGreen
+            Label2.ForeColor = Color.MediumSpringGreen
         End If
     End Sub
 
@@ -91,5 +98,28 @@
             Button1.Text = "24h"
             formato = True
         End If
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles HarikitteIkou.Click
+        If start_Uma = False Then
+            Timer3.Enabled = True
+            start_Uma = True
+            HarikitteIkou.Text = "Detenerse"
+        ElseIf start_Uma = True Then
+            Timer3.Enabled = False
+            start_Uma = False
+            HarikitteIkou.Text = "Inicio"
+        End If
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles AgnesDigital.Click
+        tiempo_crono = 0
+        Timer3.Enabled = False
+        Manhattancafe.Text = "0"
+    End Sub
+
+    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
+        tiempo_crono = tiempo_crono + 1
+        Manhattancafe.Text = tiempo_crono.ToString()
     End Sub
 End Class
