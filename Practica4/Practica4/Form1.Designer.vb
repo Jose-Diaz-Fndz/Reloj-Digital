@@ -35,19 +35,25 @@ Partial Class Form1
         Me.ElCondorPasa = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Matikanetannhauser1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Seconds = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Manhattancafe = New System.Windows.Forms.Label()
-        Me.HarikitteIkou = New System.Windows.Forms.Button()
+        Me.Kokona = New System.Windows.Forms.Panel()
         Me.AgnesDigital = New System.Windows.Forms.Button()
+        Me.HarikitteIkou = New System.Windows.Forms.Button()
+        Me.Manhattancafe = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Seconds = New System.Windows.Forms.Label()
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Matikanetannhauser1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Calstone.SuspendLayout()
+        Me.Kokona.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Matikanetannhauser1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -134,13 +140,13 @@ Partial Class Form1
         'Calstone
         '
         Me.Calstone.BackColor = System.Drawing.Color.DarkRed
-        Me.Calstone.Controls.Add(Me.Panel2)
+        Me.Calstone.Controls.Add(Me.PictureBox4)
         Me.Calstone.Controls.Add(Me.ElCondorPasa)
         Me.Calstone.Controls.Add(Me.Button1)
         Me.Calstone.Controls.Add(Me.Label3)
-        Me.Calstone.Location = New System.Drawing.Point(106, 68)
+        Me.Calstone.Location = New System.Drawing.Point(135, 228)
         Me.Calstone.Name = "Calstone"
-        Me.Calstone.Size = New System.Drawing.Size(554, 267)
+        Me.Calstone.Size = New System.Drawing.Size(528, 223)
         Me.Calstone.TabIndex = 8
         Me.Calstone.Visible = False
         '
@@ -174,25 +180,58 @@ Partial Class Form1
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Configuraciones ~w~"
         '
-        'Matikanetannhauser1
+        'Kokona
         '
-        Me.Matikanetannhauser1.Image = Global.Practica4.My.Resources.Resources.Not_mambo
-        Me.Matikanetannhauser1.Location = New System.Drawing.Point(788, 12)
-        Me.Matikanetannhauser1.Name = "Matikanetannhauser1"
-        Me.Matikanetannhauser1.Size = New System.Drawing.Size(163, 124)
-        Me.Matikanetannhauser1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Matikanetannhauser1.TabIndex = 9
-        Me.Matikanetannhauser1.TabStop = False
+        Me.Kokona.BackColor = System.Drawing.Color.IndianRed
+        Me.Kokona.Controls.Add(Me.PictureBox3)
+        Me.Kokona.Controls.Add(Me.AgnesDigital)
+        Me.Kokona.Controls.Add(Me.HarikitteIkou)
+        Me.Kokona.Controls.Add(Me.Manhattancafe)
+        Me.Kokona.Controls.Add(Me.Label4)
+        Me.Kokona.Location = New System.Drawing.Point(138, 12)
+        Me.Kokona.Name = "Kokona"
+        Me.Kokona.Size = New System.Drawing.Size(515, 217)
+        Me.Kokona.TabIndex = 3
+        Me.Kokona.Visible = False
         '
-        'PictureBox1
+        'AgnesDigital
         '
-        Me.PictureBox1.Image = Global.Practica4.My.Resources.Resources.Mambo
-        Me.PictureBox1.Location = New System.Drawing.Point(-185, 217)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1364, 597)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 6
-        Me.PictureBox1.TabStop = False
+        Me.AgnesDigital.Location = New System.Drawing.Point(312, 176)
+        Me.AgnesDigital.Name = "AgnesDigital"
+        Me.AgnesDigital.Size = New System.Drawing.Size(75, 23)
+        Me.AgnesDigital.TabIndex = 3
+        Me.AgnesDigital.Text = "Reset"
+        Me.AgnesDigital.UseVisualStyleBackColor = True
+        '
+        'HarikitteIkou
+        '
+        Me.HarikitteIkou.Location = New System.Drawing.Point(88, 176)
+        Me.HarikitteIkou.Name = "HarikitteIkou"
+        Me.HarikitteIkou.Size = New System.Drawing.Size(75, 23)
+        Me.HarikitteIkou.TabIndex = 2
+        Me.HarikitteIkou.Text = "Inicio"
+        Me.HarikitteIkou.UseVisualStyleBackColor = True
+        '
+        'Manhattancafe
+        '
+        Me.Manhattancafe.AutoSize = True
+        Me.Manhattancafe.Font = New System.Drawing.Font("Papyrus", 36.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Manhattancafe.Location = New System.Drawing.Point(100, 66)
+        Me.Manhattancafe.Name = "Manhattancafe"
+        Me.Manhattancafe.Size = New System.Drawing.Size(287, 76)
+        Me.Manhattancafe.TabIndex = 1
+        Me.Manhattancafe.Text = "00:00:00.00"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("ScriptC", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.OrangeRed
+        Me.Label4.Location = New System.Drawing.Point(135, 13)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(228, 60)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Cronómetro"
         '
         'Seconds
         '
@@ -205,59 +244,58 @@ Partial Class Form1
         Me.Seconds.TabIndex = 10
         Me.Seconds.Text = "Label4"
         '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.Firebrick
-        Me.Panel2.Controls.Add(Me.AgnesDigital)
-        Me.Panel2.Controls.Add(Me.HarikitteIkou)
-        Me.Panel2.Controls.Add(Me.Manhattancafe)
-        Me.Panel2.Controls.Add(Me.Label4)
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(554, 264)
-        Me.Panel2.TabIndex = 3
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Sitka Banner", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.LightSeaGreen
-        Me.Label4.Location = New System.Drawing.Point(164, 9)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(196, 53)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Cronómetro"
-        '
-        'Manhattancafe
-        '
-        Me.Manhattancafe.AutoSize = True
-        Me.Manhattancafe.Font = New System.Drawing.Font("Papyrus", 36.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Manhattancafe.Location = New System.Drawing.Point(299, 66)
-        Me.Manhattancafe.Name = "Manhattancafe"
-        Me.Manhattancafe.Size = New System.Drawing.Size(61, 76)
-        Me.Manhattancafe.TabIndex = 1
-        Me.Manhattancafe.Text = "0"
-        '
-        'HarikitteIkou
-        '
-        Me.HarikitteIkou.Location = New System.Drawing.Point(88, 176)
-        Me.HarikitteIkou.Name = "HarikitteIkou"
-        Me.HarikitteIkou.Size = New System.Drawing.Size(75, 23)
-        Me.HarikitteIkou.TabIndex = 2
-        Me.HarikitteIkou.Text = "Inicio"
-        Me.HarikitteIkou.UseVisualStyleBackColor = True
-        '
-        'AgnesDigital
-        '
-        Me.AgnesDigital.Location = New System.Drawing.Point(312, 176)
-        Me.AgnesDigital.Name = "AgnesDigital"
-        Me.AgnesDigital.Size = New System.Drawing.Size(75, 23)
-        Me.AgnesDigital.TabIndex = 3
-        Me.AgnesDigital.Text = "Reset"
-        Me.AgnesDigital.UseVisualStyleBackColor = True
-        '
         'Timer3
         '
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Practica4.My.Resources.Resources.cronometro
+        Me.PictureBox2.Location = New System.Drawing.Point(714, 25)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(68, 65)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 4
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.Practica4.My.Resources.Resources.Hoshino
+        Me.PictureBox3.Location = New System.Drawing.Point(393, 14)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(100, 110)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 4
+        Me.PictureBox3.TabStop = False
+        '
+        'Matikanetannhauser1
+        '
+        Me.Matikanetannhauser1.Image = Global.Practica4.My.Resources.Resources.Not_mambo
+        Me.Matikanetannhauser1.Location = New System.Drawing.Point(788, 12)
+        Me.Matikanetannhauser1.Name = "Matikanetannhauser1"
+        Me.Matikanetannhauser1.Size = New System.Drawing.Size(163, 124)
+        Me.Matikanetannhauser1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Matikanetannhauser1.TabIndex = 9
+        Me.Matikanetannhauser1.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.Practica4.My.Resources.Resources.Manhattan_Cafe
+        Me.PictureBox4.Location = New System.Drawing.Point(203, 69)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(120, 148)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 3
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Practica4.My.Resources.Resources.Mambo
+        Me.PictureBox1.Location = New System.Drawing.Point(-180, 262)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(1364, 597)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabStop = False
         '
         'Form1
         '
@@ -265,6 +303,8 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Maroon
         Me.ClientSize = New System.Drawing.Size(963, 654)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.Kokona)
         Me.Controls.Add(Me.Matikanetannhauser1)
         Me.Controls.Add(Me.Calstone)
         Me.Controls.Add(Me.Fecha)
@@ -281,10 +321,13 @@ Partial Class Form1
         Me.TransparencyKey = System.Drawing.Color.Transparent
         Me.Calstone.ResumeLayout(False)
         Me.Calstone.PerformLayout()
+        Me.Kokona.ResumeLayout(False)
+        Me.Kokona.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Matikanetannhauser1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -305,10 +348,13 @@ Partial Class Form1
     Friend WithEvents Matikanetannhauser1 As PictureBox
     Friend WithEvents ElCondorPasa As ComboBox
     Friend WithEvents Seconds As Label
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Kokona As Panel
     Friend WithEvents Label4 As Label
     Friend WithEvents AgnesDigital As Button
     Friend WithEvents HarikitteIkou As Button
     Friend WithEvents Manhattancafe As Label
     Friend WithEvents Timer3 As Timer
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
 End Class

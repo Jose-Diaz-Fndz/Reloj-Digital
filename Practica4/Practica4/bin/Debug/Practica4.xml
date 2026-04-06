@@ -27,6 +27,11 @@ Practica4
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Practica4.My.Resources.Resources.cronometro">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Practica4.My.Resources.Resources.descarga">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -37,7 +42,17 @@ Practica4
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Practica4.My.Resources.Resources.Hoshino">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Practica4.My.Resources.Resources.Mambo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Practica4.My.Resources.Resources.Manhattan_Cafe">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

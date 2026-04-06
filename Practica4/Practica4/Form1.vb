@@ -99,16 +99,20 @@
             formato = True
         End If
     End Sub
+    Private StartTime As DateTime
+    Private elapsed As TimeSpan = TimeSpan.Zero
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles HarikitteIkou.Click
         If start_Uma = False Then
             Timer3.Enabled = True
             start_Uma = True
             HarikitteIkou.Text = "Detenerse"
+            StartTime = DateTime.Now
         ElseIf start_Uma = True Then
             Timer3.Enabled = False
             start_Uma = False
             HarikitteIkou.Text = "Inicio"
+            elapsed += DateTime.Now - StartTime
         End If
     End Sub
 
@@ -121,5 +125,13 @@
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
         tiempo_crono = tiempo_crono + 1
         Manhattancafe.Text = tiempo_crono.ToString()
+    End Sub
+
+    Private Sub PictureBox2_Click_1(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        If Kokona.Visible = False Then
+            Kokona.Visible = True
+        ElseIf Kokona.Visible = True Then
+            Kokona.Visible = False
+        End If
     End Sub
 End Class

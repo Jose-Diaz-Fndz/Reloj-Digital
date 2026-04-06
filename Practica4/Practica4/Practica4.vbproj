@@ -140,5 +140,14 @@
   <ItemGroup>
     <None Include="Resources\Not mambo.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cronometro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hoshino.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manhattan Cafe.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
