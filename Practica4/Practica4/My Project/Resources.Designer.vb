@@ -143,6 +143,36 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Orphie_and_Magus() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Orphie and Magus", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Orphie_hehe() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Orphie hehe", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Reloj_de_arena() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Reloj de arena", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property reloj_despertador_digital_con_termometro_y_luz_de_noche() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("reloj-despertador-digital-con-termometro-y-luz-de-noche", resourceCulture)

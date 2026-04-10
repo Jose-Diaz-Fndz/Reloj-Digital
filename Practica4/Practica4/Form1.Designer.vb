@@ -35,20 +35,32 @@ Partial Class Form1
         Me.ElCondorPasa = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Kokona = New System.Windows.Forms.Panel()
+        Me.Hoshino = New System.Windows.Forms.Panel()
         Me.AgnesDigital = New System.Windows.Forms.Button()
         Me.HarikitteIkou = New System.Windows.Forms.Button()
         Me.Manhattancafe = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Seconds = New System.Windows.Forms.Label()
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
+        Me.OrphieAndMagus = New System.Windows.Forms.Panel()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Matikanetannhauser1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Calstone.SuspendLayout()
-        Me.Kokona.SuspendLayout()
+        Me.Hoshino.SuspendLayout()
+        Me.OrphieAndMagus.SuspendLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Matikanetannhauser1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -180,19 +192,19 @@ Partial Class Form1
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Configuraciones ~w~"
         '
-        'Kokona
+        'Hoshino
         '
-        Me.Kokona.BackColor = System.Drawing.Color.IndianRed
-        Me.Kokona.Controls.Add(Me.PictureBox3)
-        Me.Kokona.Controls.Add(Me.AgnesDigital)
-        Me.Kokona.Controls.Add(Me.HarikitteIkou)
-        Me.Kokona.Controls.Add(Me.Manhattancafe)
-        Me.Kokona.Controls.Add(Me.Label4)
-        Me.Kokona.Location = New System.Drawing.Point(138, 12)
-        Me.Kokona.Name = "Kokona"
-        Me.Kokona.Size = New System.Drawing.Size(515, 217)
-        Me.Kokona.TabIndex = 3
-        Me.Kokona.Visible = False
+        Me.Hoshino.BackColor = System.Drawing.Color.IndianRed
+        Me.Hoshino.Controls.Add(Me.PictureBox3)
+        Me.Hoshino.Controls.Add(Me.AgnesDigital)
+        Me.Hoshino.Controls.Add(Me.HarikitteIkou)
+        Me.Hoshino.Controls.Add(Me.Manhattancafe)
+        Me.Hoshino.Controls.Add(Me.Label4)
+        Me.Hoshino.Location = New System.Drawing.Point(138, 12)
+        Me.Hoshino.Name = "Hoshino"
+        Me.Hoshino.Size = New System.Drawing.Size(515, 217)
+        Me.Hoshino.TabIndex = 3
+        Me.Hoshino.Visible = False
         '
         'AgnesDigital
         '
@@ -246,6 +258,52 @@ Partial Class Form1
         '
         'Timer3
         '
+        Me.Timer3.Interval = 1
+        '
+        'OrphieAndMagus
+        '
+        Me.OrphieAndMagus.BackColor = System.Drawing.Color.IndianRed
+        Me.OrphieAndMagus.Controls.Add(Me.Button3)
+        Me.OrphieAndMagus.Controls.Add(Me.Button2)
+        Me.OrphieAndMagus.Controls.Add(Me.Label6)
+        Me.OrphieAndMagus.Controls.Add(Me.Label5)
+        Me.OrphieAndMagus.Controls.Add(Me.PictureBox7)
+        Me.OrphieAndMagus.Controls.Add(Me.PictureBox6)
+        Me.OrphieAndMagus.Location = New System.Drawing.Point(683, 154)
+        Me.OrphieAndMagus.Name = "OrphieAndMagus"
+        Me.OrphieAndMagus.Size = New System.Drawing.Size(268, 242)
+        Me.OrphieAndMagus.TabIndex = 11
+        Me.OrphieAndMagus.Visible = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.Practica4.My.Resources.Resources.Reloj_de_arena
+        Me.PictureBox5.Location = New System.Drawing.Point(21, 12)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(100, 101)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 12
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = Global.Practica4.My.Resources.Resources.Orphie_hehe
+        Me.PictureBox7.Location = New System.Drawing.Point(156, 163)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(109, 79)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 1
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.Practica4.My.Resources.Resources.Orphie_and_Magus
+        Me.PictureBox6.Location = New System.Drawing.Point(3, 163)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(117, 76)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 0
+        Me.PictureBox6.TabStop = False
         '
         'PictureBox2
         '
@@ -297,14 +355,55 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("ScriptC", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.Bisque
+        Me.Label5.Location = New System.Drawing.Point(3, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(260, 60)
+        Me.Label5.TabIndex = 5
+        Me.Label5.Text = "Temporizador"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Papyrus", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(45, 54)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(187, 51)
+        Me.Label6.TabIndex = 6
+        Me.Label6.Text = "00:00:00.00"
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(24, 117)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 7
+        Me.Button2.Text = "5min"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(156, 117)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 8
+        Me.Button3.Text = "Start"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Maroon
         Me.ClientSize = New System.Drawing.Size(963, 654)
+        Me.Controls.Add(Me.PictureBox5)
+        Me.Controls.Add(Me.OrphieAndMagus)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.Kokona)
+        Me.Controls.Add(Me.Hoshino)
         Me.Controls.Add(Me.Matikanetannhauser1)
         Me.Controls.Add(Me.Calstone)
         Me.Controls.Add(Me.Fecha)
@@ -321,8 +420,13 @@ Partial Class Form1
         Me.TransparencyKey = System.Drawing.Color.Transparent
         Me.Calstone.ResumeLayout(False)
         Me.Calstone.PerformLayout()
-        Me.Kokona.ResumeLayout(False)
-        Me.Kokona.PerformLayout()
+        Me.Hoshino.ResumeLayout(False)
+        Me.Hoshino.PerformLayout()
+        Me.OrphieAndMagus.ResumeLayout(False)
+        Me.OrphieAndMagus.PerformLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Matikanetannhauser1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -348,7 +452,7 @@ Partial Class Form1
     Friend WithEvents Matikanetannhauser1 As PictureBox
     Friend WithEvents ElCondorPasa As ComboBox
     Friend WithEvents Seconds As Label
-    Friend WithEvents Kokona As Panel
+    Friend WithEvents Hoshino As Panel
     Friend WithEvents Label4 As Label
     Friend WithEvents AgnesDigital As Button
     Friend WithEvents HarikitteIkou As Button
@@ -357,4 +461,12 @@ Partial Class Form1
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents OrphieAndMagus As Panel
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Label6 As Label
 End Class

@@ -64,13 +64,13 @@
             Seconds.ForeColor = Color.IndianRed
             Label2.ForeColor = Color.IndianRed
         ElseIf color_texto = "Azul" Then
-            Hours.ForeColor = Color.MediumAquamarine
-            Minutes.ForeColor = Color.MediumAquamarine
-            Label1.ForeColor = Color.MediumAquamarine
-            Days.ForeColor = Color.MediumAquamarine
-            Fecha.ForeColor = Color.MediumAquamarine
-            Seconds.ForeColor = Color.MediumAquamarine
-            Label2.ForeColor = Color.MediumAquamarine
+            Hours.ForeColor = Color.DarkTurquoise
+            Minutes.ForeColor = Color.DarkTurquoise
+            Label1.ForeColor = Color.DarkTurquoise
+            Days.ForeColor = Color.DarkTurquoise
+            Fecha.ForeColor = Color.DarkTurquoise
+            Seconds.ForeColor = Color.DarkTurquoise
+            Label2.ForeColor = Color.DarkTurquoise
         ElseIf color_texto = "Naranja" Then
             Hours.ForeColor = Color.LightSalmon
             Minutes.ForeColor = Color.LightSalmon
@@ -117,21 +117,31 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles AgnesDigital.Click
-        tiempo_crono = 0
+        elapsed = TimeSpan.Zero
         Timer3.Enabled = False
-        Manhattancafe.Text = "0"
+        Manhattancafe.Text = "00:00:00.00"
+        start_Uma = False
+        HarikitteIkou.Text = "Inicio"
     End Sub
 
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
-        tiempo_crono = tiempo_crono + 1
-        Manhattancafe.Text = tiempo_crono.ToString()
+        Dim current = elapsed + (DateTime.Now - StartTime)
+        Manhattancafe.Text = current.ToString("hh\:mm\:ss\.ff")
     End Sub
 
     Private Sub PictureBox2_Click_1(sender As Object, e As EventArgs) Handles PictureBox2.Click
-        If Kokona.Visible = False Then
-            Kokona.Visible = True
-        ElseIf Kokona.Visible = True Then
-            Kokona.Visible = False
+        If Hoshino.Visible = False Then
+            Hoshino.Visible = True
+        ElseIf Hoshino.Visible = True Then
+            Hoshino.Visible = False
+        End If
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        If OrphieAndMagus.Visible = True Then
+            OrphieAndMagus.Visible = False
+        ElseIf OrphieAndMagus.Visible = False Then
+            OrphieAndMagus.Visible = True
         End If
     End Sub
 End Class

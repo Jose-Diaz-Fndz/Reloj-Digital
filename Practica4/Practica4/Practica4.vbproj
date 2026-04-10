@@ -149,5 +149,14 @@
   <ItemGroup>
     <None Include="Resources\Manhattan Cafe.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reloj de arena.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orphie and Magus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orphie hehe.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -62,6 +62,21 @@ Practica4
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Practica4.My.Resources.Resources.Orphie_and_Magus">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Practica4.My.Resources.Resources.Orphie_hehe">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Practica4.My.Resources.Resources.Reloj_de_arena">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Practica4.My.Resources.Resources.reloj_despertador_digital_con_termometro_y_luz_de_noche">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
