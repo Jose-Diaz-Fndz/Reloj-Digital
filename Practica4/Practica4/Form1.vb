@@ -137,11 +137,73 @@
         End If
     End Sub
 
+
+    Private tiempoRestante As TimeSpan = TimeSpan.Zero
+    Private temporizadorActivo As Boolean = False
+
+
     Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
         If OrphieAndMagus.Visible = True Then
             OrphieAndMagus.Visible = False
         ElseIf OrphieAndMagus.Visible = False Then
             OrphieAndMagus.Visible = True
+        End If
+    End Sub
+
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Orphie.Click
+
+        tiempoRestante = tiempoRestante.Add(TimeSpan.FromMinutes(1))
+        SrSeed.Text = tiempoRestante.ToString("mm\:ss")
+    End Sub
+
+    Private Sub Magus_Click(sender As Object, e As EventArgs) Handles Magus.Click
+
+        tiempoRestante = tiempoRestante.Add(TimeSpan.FromMinutes(5))
+        SrSeed.Text = tiempoRestante.ToString("mm\:ss")
+
+    End Sub
+
+    Private Sub Soldier11_Click(sender As Object, e As EventArgs) Handles Soldier11.Click
+
+        If tiempoRestante = TimeSpan.Zero Then
+            MessageBox.Show("No puedes empezar, Proxy~", "Aviso",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Exit Sub
+        End If
+
+        If temporizadorActivo = False Then
+            Timer4.Enabled = True
+            temporizadorActivo = True
+            Soldier11.Text = "Stop"
+        Else
+            Timer4.Enabled = False
+            temporizadorActivo = False
+            Soldier11.Text = "Start"
+        End If
+    End Sub
+
+    Private Sub Trigger_Click(sender As Object, e As EventArgs) Handles Trigger.Click
+
+        Timer4.Enabled = False
+        tiempoRestante = TimeSpan.Zero
+        temporizadorActivo = False
+        SrSeed.Text = "00:00:00.00"
+        Soldier11.Text = "Start"
+    End Sub
+
+    Private Sub Timer4_Tick(sender As Object, e As EventArgs) Handles Timer4.Tick
+        If tiempoRestante.TotalMilliseconds > 0 Then
+            tiempoRestante = tiempoRestante.Subtract(TimeSpan.FromMilliseconds(Timer4.Interval))
+            SrSeed.Text = tiempoRestante.ToString("mm\:ss")
+        Else
+            Timer4.Enabled = False
+            temporizadorActivo = False
+            tiempoRestante = TimeSpan.Zero
+            SrSeed.Text = "00:00:00.00"
+            Soldier11.Text = "Start"
+
+            Message.Show("¡Ya Acabaste con todo, Sensei~!", "Temporizador",
+                         MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
 End Class

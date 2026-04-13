@@ -32,10 +32,12 @@ Partial Class Form1
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Calstone = New System.Windows.Forms.Panel()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.ElCondorPasa = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Hoshino = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.AgnesDigital = New System.Windows.Forms.Button()
         Me.HarikitteIkou = New System.Windows.Forms.Button()
         Me.Manhattancafe = New System.Windows.Forms.Label()
@@ -43,28 +45,29 @@ Partial Class Form1
         Me.Seconds = New System.Windows.Forms.Label()
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.OrphieAndMagus = New System.Windows.Forms.Panel()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.Magus = New System.Windows.Forms.Button()
+        Me.Orphie = New System.Windows.Forms.Button()
+        Me.SrSeed = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Matikanetannhauser1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Soldier11 = New System.Windows.Forms.Button()
+        Me.Trigger = New System.Windows.Forms.Button()
+        Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
         Me.Calstone.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Hoshino.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.OrphieAndMagus.SuspendLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Matikanetannhauser1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -162,6 +165,16 @@ Partial Class Form1
         Me.Calstone.TabIndex = 8
         Me.Calstone.Visible = False
         '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.Practica4.My.Resources.Resources.Manhattan_Cafe
+        Me.PictureBox4.Location = New System.Drawing.Point(203, 69)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(120, 148)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 3
+        Me.PictureBox4.TabStop = False
+        '
         'ElCondorPasa
         '
         Me.ElCondorPasa.BackColor = System.Drawing.SystemColors.Menu
@@ -205,6 +218,16 @@ Partial Class Form1
         Me.Hoshino.Size = New System.Drawing.Size(515, 217)
         Me.Hoshino.TabIndex = 3
         Me.Hoshino.Visible = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.Practica4.My.Resources.Resources.Hoshino
+        Me.PictureBox3.Location = New System.Drawing.Point(393, 14)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(100, 110)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 4
+        Me.PictureBox3.TabStop = False
         '
         'AgnesDigital
         '
@@ -263,9 +286,11 @@ Partial Class Form1
         'OrphieAndMagus
         '
         Me.OrphieAndMagus.BackColor = System.Drawing.Color.IndianRed
-        Me.OrphieAndMagus.Controls.Add(Me.Button3)
-        Me.OrphieAndMagus.Controls.Add(Me.Button2)
-        Me.OrphieAndMagus.Controls.Add(Me.Label6)
+        Me.OrphieAndMagus.Controls.Add(Me.Trigger)
+        Me.OrphieAndMagus.Controls.Add(Me.Soldier11)
+        Me.OrphieAndMagus.Controls.Add(Me.Magus)
+        Me.OrphieAndMagus.Controls.Add(Me.Orphie)
+        Me.OrphieAndMagus.Controls.Add(Me.SrSeed)
         Me.OrphieAndMagus.Controls.Add(Me.Label5)
         Me.OrphieAndMagus.Controls.Add(Me.PictureBox7)
         Me.OrphieAndMagus.Controls.Add(Me.PictureBox6)
@@ -275,15 +300,44 @@ Partial Class Form1
         Me.OrphieAndMagus.TabIndex = 11
         Me.OrphieAndMagus.Visible = False
         '
-        'PictureBox5
+        'Magus
         '
-        Me.PictureBox5.Image = Global.Practica4.My.Resources.Resources.Reloj_de_arena
-        Me.PictureBox5.Location = New System.Drawing.Point(21, 12)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(100, 101)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 12
-        Me.PictureBox5.TabStop = False
+        Me.Magus.Location = New System.Drawing.Point(157, 100)
+        Me.Magus.Name = "Magus"
+        Me.Magus.Size = New System.Drawing.Size(75, 23)
+        Me.Magus.TabIndex = 8
+        Me.Magus.Text = "+ 5min"
+        Me.Magus.UseVisualStyleBackColor = True
+        '
+        'Orphie
+        '
+        Me.Orphie.Location = New System.Drawing.Point(24, 100)
+        Me.Orphie.Name = "Orphie"
+        Me.Orphie.Size = New System.Drawing.Size(75, 23)
+        Me.Orphie.TabIndex = 7
+        Me.Orphie.Text = "+ 1min"
+        Me.Orphie.UseVisualStyleBackColor = True
+        '
+        'SrSeed
+        '
+        Me.SrSeed.AutoSize = True
+        Me.SrSeed.Font = New System.Drawing.Font("Papyrus", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SrSeed.Location = New System.Drawing.Point(45, 54)
+        Me.SrSeed.Name = "SrSeed"
+        Me.SrSeed.Size = New System.Drawing.Size(187, 51)
+        Me.SrSeed.TabIndex = 6
+        Me.SrSeed.Text = "00:00:00.00"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("ScriptC", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.Bisque
+        Me.Label5.Location = New System.Drawing.Point(3, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(260, 60)
+        Me.Label5.TabIndex = 5
+        Me.Label5.Text = "Temporizador"
         '
         'PictureBox7
         '
@@ -305,6 +359,16 @@ Partial Class Form1
         Me.PictureBox6.TabIndex = 0
         Me.PictureBox6.TabStop = False
         '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.Practica4.My.Resources.Resources.Reloj_de_arena
+        Me.PictureBox5.Location = New System.Drawing.Point(21, 12)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(100, 101)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 12
+        Me.PictureBox5.TabStop = False
+        '
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.Practica4.My.Resources.Resources.cronometro
@@ -314,16 +378,6 @@ Partial Class Form1
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 4
         Me.PictureBox2.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.Practica4.My.Resources.Resources.Hoshino
-        Me.PictureBox3.Location = New System.Drawing.Point(393, 14)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(100, 110)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 4
-        Me.PictureBox3.TabStop = False
         '
         'Matikanetannhauser1
         '
@@ -335,16 +389,6 @@ Partial Class Form1
         Me.Matikanetannhauser1.TabIndex = 9
         Me.Matikanetannhauser1.TabStop = False
         '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.Practica4.My.Resources.Resources.Manhattan_Cafe
-        Me.PictureBox4.Location = New System.Drawing.Point(203, 69)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(120, 148)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 3
-        Me.PictureBox4.TabStop = False
-        '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Practica4.My.Resources.Resources.Mambo
@@ -355,44 +399,26 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
-        'Label5
+        'Soldier11
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("ScriptC", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.Bisque
-        Me.Label5.Location = New System.Drawing.Point(3, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(260, 60)
-        Me.Label5.TabIndex = 5
-        Me.Label5.Text = "Temporizador"
+        Me.Soldier11.Location = New System.Drawing.Point(24, 134)
+        Me.Soldier11.Name = "Soldier11"
+        Me.Soldier11.Size = New System.Drawing.Size(75, 23)
+        Me.Soldier11.TabIndex = 9
+        Me.Soldier11.Text = "Start"
+        Me.Soldier11.UseVisualStyleBackColor = True
         '
-        'Label6
+        'Trigger
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Papyrus", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(45, 54)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(187, 51)
-        Me.Label6.TabIndex = 6
-        Me.Label6.Text = "00:00:00.00"
+        Me.Trigger.Location = New System.Drawing.Point(157, 134)
+        Me.Trigger.Name = "Trigger"
+        Me.Trigger.Size = New System.Drawing.Size(75, 23)
+        Me.Trigger.TabIndex = 10
+        Me.Trigger.Text = "Reset"
+        Me.Trigger.UseVisualStyleBackColor = True
         '
-        'Button2
+        'Timer4
         '
-        Me.Button2.Location = New System.Drawing.Point(24, 117)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "5min"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(156, 117)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 8
-        Me.Button3.Text = "Start"
-        Me.Button3.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -420,17 +446,17 @@ Partial Class Form1
         Me.TransparencyKey = System.Drawing.Color.Transparent
         Me.Calstone.ResumeLayout(False)
         Me.Calstone.PerformLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Hoshino.ResumeLayout(False)
         Me.Hoshino.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.OrphieAndMagus.ResumeLayout(False)
         Me.OrphieAndMagus.PerformLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Matikanetannhauser1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -466,7 +492,10 @@ Partial Class Form1
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Label6 As Label
+    Friend WithEvents Magus As Button
+    Friend WithEvents Orphie As Button
+    Friend WithEvents SrSeed As Label
+    Friend WithEvents Trigger As Button
+    Friend WithEvents Soldier11 As Button
+    Friend WithEvents Timer4 As Timer
 End Class
